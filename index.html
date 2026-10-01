@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreshCo Painting & Remodeling | Free Project Estimate</title>
+  <meta name="description" content="Professional interior and exterior painting, kitchen, bathroom, and remodeling services. Request a free project estimate.">
+  <style>
+    :root{
+      --ink:#17201d; --muted:#68736f; --paper:#f7f5ef; --card:#fff;
+      --accent:#d96b35; --accent2:#315c4d; --line:#dedbd2;
+      --shadow:0 18px 45px rgba(24,31,28,.10); --radius:20px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    .top{background:var(--ink);color:#fff;text-align:center;font-size:14px;padding:9px}
+    header{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .logo{font-weight:900;font-size:20px;letter-spacing:-.5px}.logo span{color:var(--accent)}
+    .navlinks{display:flex;gap:25px;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--accent)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(217,107,53,.25)}
+    .btn-dark{background:var(--ink);color:#fff}.btn-light{background:#fff;border:1px solid var(--line)}
+    .hero{padding:80px 0 70px;background:
+      radial-gradient(circle at 85% 20%,rgba(217,107,53,.16),transparent 30%),
+      radial-gradient(circle at 10% 90%,rgba(49,92,77,.13),transparent 28%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
+    h1{font-size:clamp(44px,6vw,76px);line-height:.98;letter-spacing:-4px;margin:16px 0 22px;max-width:760px}
+    .hero p{font-size:19px;color:var(--muted);max-width:640px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:25px;font-size:13px;color:var(--muted);font-weight:700}
+    .visual{min-height:510px;border-radius:30px;overflow:hidden;position:relative;background:
+      linear-gradient(145deg,rgba(49,92,77,.12),rgba(217,107,53,.18)),
+      repeating-linear-gradient(45deg,#ddd8cc 0 18px,#ebe7de 18px 36px);
+      box-shadow:var(--shadow)}
+    .room{position:absolute;inset:35px;background:#e8dfd0;border-radius:22px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}
+    .room:before{content:"";position:absolute;left:8%;right:8%;top:11%;height:42%;background:#f8f6ef;border-radius:8px;box-shadow:0 12px 20px rgba(0,0,0,.08)}
+    .room:after{content:"BEFORE  →  AFTER";position:absolute;left:25px;bottom:25px;background:var(--ink);color:#fff;padding:10px 15px;border-radius:10px;font-size:12px;font-weight:900;letter-spacing:1px}
+    .estimate-card{position:absolute;right:18px;bottom:18px;background:#fff;padding:18px;border-radius:16px;box-shadow:var(--shadow);width:230px}
+    .estimate-card strong{font-size:22px}.estimate-card small{color:var(--muted)}
+    section{padding:90px 0}.section-head{max-width:720px;margin-bottom:35px}.section-head h2{font-size:clamp(32px,4vw,50px);line-height:1.05;letter-spacing:-2px;margin:10px 0}.section-head p{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px;min-height:210px}.icon{font-size:30px}.service h3{margin:16px 0 8px}.service p{color:var(--muted);font-size:14px}
+    .process{background:var(--accent2);color:#fff}.process .section-head p{color:#dce6e0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:24px}.num{font-size:12px;font-weight:900;opacity:.7}.step h3{margin:12px 0 8px}
+    .proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}.photo{height:240px;background:linear-gradient(135deg,#c9b9a2,#eee9df);position:relative}.photo.two{background:linear-gradient(135deg,#8e9a8e,#e6e0d5)}.photo.three{background:linear-gradient(135deg,#b9a58f,#d7d8d0)}.photo span{position:absolute;left:14px;bottom:14px;background:rgba(23,32,29,.9);color:#fff;padding:7px 10px;border-radius:8px;font-size:11px;font-weight:900}.project-body{padding:18px}.project-body p{color:var(--muted);font-size:14px}
+    .lead-section{background:#eeeae1}.lead-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:start}.lead-copy h2{font-size:50px;line-height:1.02;letter-spacing:-2px;margin:10px 0 15px}.lead-copy p{color:var(--muted)}.check{display:block;margin:14px 0;font-weight:700}.check:before{content:"✓";color:var(--accent);margin-right:9px}
+    form{background:#fff;border:1px solid var(--line);padding:28px;border-radius:24px;box-shadow:var(--shadow);display:grid;gap:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:12px;font-weight:900;display:grid;gap:7px}input,select,textarea{width:100%;font:inherit;border:1px solid #d5d2c9;border-radius:11px;padding:12px;background:#fff}textarea{min-height:105px;resize:vertical}.form-note{font-size:12px;color:var(--muted)}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:15px}.faq details{background:#fff;border:1px solid var(--line);padding:18px 20px;border-radius:14px}.faq summary{font-weight:800;cursor:pointer}
+    footer{background:var(--ink);color:#fff;padding:45px 0}.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-grid p{color:#bfc8c4;font-size:14px}
+    .mobile{display:none}
+    @media(max-width:900px){.hero-grid,.lead-grid{grid-template-columns:1fr}.visual{min-height:380px}.services,.steps{grid-template-columns:1fr 1fr}.proof{grid-template-columns:1fr}.navlinks{display:none}.mobile{display:inline-flex}.faq{grid-template-columns:1fr}}
+    @media(max-width:560px){h1{letter-spacing:-2.5px}.services,.steps,.row{grid-template-columns:1fr}.hero{padding-top:50px}.visual{min-height:320px}.lead-copy h2{font-size:40px}.nav{height:65px}}
+  </style>
+</head>
+<body>
+  <div class="top">Serving local homeowners • Free estimates • Fast project response</div>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#">Fresh<span>Co</span> Home</a>
+        <div class="navlinks">
+          <a href="#services">Services</a><a href="#process">How It Works</a><a href="#projects">Projects</a><a href="#faq">FAQ</a>
+        </div>
+        <a class="btn btn-primary mobile" href="#estimate">Get Estimate</a>
+        <a class="btn btn-primary navlinks" href="#estimate">Get Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Painting + Remodeling</div>
+          <h1>Turn your house into the home you want.</h1>
+          <p>Professional interior and exterior painting, kitchens, bathrooms, and remodeling — with a simple estimate process and clear communication from start to finish.</p>
+          <div class="actions"><a class="btn btn-primary" href="#estimate">Request My Free Estimate →</a><a class="btn btn-light" href="#projects">See Our Work</a></div>
+          <div class="trust"><span>✓ Free estimates</span><span>✓ Local service</span><span>✓ Detailed project scope</span></div>
+        </div>
+        <div class="visual" aria-label="Before and after remodeling project visual">
+          <div class="room"></div>
+          <div class="estimate-card"><small>PROJECT REQUEST</small><br><strong>Let's improve your space.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">What we do</div><h2>One place for the projects on your list.</h2><p>Use this section to capture homeowners searching for specific painting and remodeling services.</p></div>
+        <div class="services">
+          <article class="service"><div class="icon">🎨</div><h3>Interior Painting</h3><p>Walls, ceilings, trim, doors, accent walls, and complete room refreshes.</p></article>
+          <article class="service"><div class="icon">🏠</div><h3>Exterior Painting</h3><p>Refresh siding, trim, doors, decks, and other exterior surfaces.</p></article>
+          <article class="service"><div class="icon">🛁</div><h3>Bathroom Remodeling</h3><p>Update finishes, fixtures, tile, storage, and the overall look of your bathroom.</p></article>
+          <article class="service"><div class="icon">🔨</div><h3>Kitchen & Remodeling</h3><p>Cabinet updates, walls, flooring, finishes, and larger room transformations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Simple workflow</div><h2>From idea to finished project.</h2><p>Inspired by the source material's step-by-step workflow structure, adapted for homeowners.</p></div>
+        <div class="steps">
+          <div class="step"><div class="num">01</div><h3>Tell us what you need</h3><p>Complete the short project form with your service, timing, and property details.</p></div>
+          <div class="step"><div class="num">02</div><h3>Project review</h3><p>We review the request and contact you to clarify the scope and next steps.</p></div>
+          <div class="step"><div class="num">03</div><h3>Estimate</h3><p>Get a project scope and estimate based on the information available.</p></div>
+          <div class="step"><div class="num">04</div><h3>Transform</h3><p>Move forward with the agreed project plan and bring the space to life.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Project examples</div><h2>Show the result before asking for the lead.</h2><p>Replace these placeholders with your real project photography, reviews, and locations.</p></div>
+        <div class="proof">
+          <article class="project"><div class="photo"><span>INTERIOR PAINT</span></div><div class="project-body"><h3>Whole-home refresh</h3><p>Neutral walls, crisp trim, and a cleaner modern finish.</p></div></article>
+          <article class="project"><div class="photo two"><span>EXTERIOR PAINT</span></div><div class="project-body"><h3>Exterior transformation</h3><p>A fresh exterior color scheme designed to update curb appeal.</p></div></article>
+          <article class="project"><div class="photo three"><span>REMODEL</span></div><div class="project-body"><h3>Room renovation</h3><p>New finishes and details designed around the homeowner's goals.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="estimate" class="lead-section">
+      <div class="container lead-grid">
+        <div class="lead-copy">
+          <div class="eyebrow">Start your project</div>
+          <h2>Get a free project estimate.</h2>
+          <p>Give us the basics. We'll use your answers to understand what you're looking for and follow up about the next step.</p>
+          <span class="check">No obligation to move forward</span>
+          <span class="check">Painting and remodeling requests</span>
+          <span class="check">Fast lead notification for your team</span>
+        </div>
+        <form id="leadForm">
+          <div class="row">
+            <label>Full name<input required name="name" placeholder="Your name"></label>
+            <label>Phone<input required name="phone" type="tel" placeholder="(555) 555-5555"></label>
+          </div>
+          <div class="row">
+            <label>Email<input required name="email" type="email" placeholder="you@example.com"></label>
+            <label>ZIP code<input required name="zip" inputmode="numeric" placeholder="30301"></label>
+          </div>
+          <div class="row">
+            <label>Project type
+              <select name="service" required><option value="">Choose one</option><option>Interior Painting</option><option>Exterior Painting</option><option>Bathroom Remodeling</option><option>Kitchen Remodeling</option><option>Other Remodeling</option></select>
+            </label>
+            <label>When are you looking to start?
+              <select name="timing" required><option value="">Choose one</option><option>ASAP</option><option>Within 30 days</option><option>1–3 months</option><option>Just researching</option></select>
+            </label>
+          </div>
+          <label>Tell us about the project<textarea name="message" placeholder="Rooms, approximate size, what you want changed, etc."></textarea></label>
+          <label>Project photos (optional)<input name="photos" type="file" accept="image/*" multiple></label>
+          <button class="btn btn-primary" type="submit">Request My Free Estimate →</button>
+          <div class="form-note">By submitting, you agree to be contacted about your project request. Connect this form to your CRM, email, or lead-management system before launch.</div>
+          <div id="success" class="form-note" hidden>Thanks! Your request has been captured in this demo. Connect the form endpoint to receive real leads.</div>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Questions</div><h2>Remove the friction before the call.</h2></div>
+        <div class="faq">
+          <details><summary>Do you provide free estimates?</summary><p>Yes. The site is structured around a free estimate request; replace this copy with your actual policy.</p></details>
+          <details><summary>What areas do you serve?</summary><p>Replace this with your service cities, ZIP codes, or radius so visitors know whether you work in their area.</p></details>
+          <details><summary>Can I send project photos?</summary><p>Yes. The form includes an optional photo upload field to help qualify the project.</p></details>
+          <details><summary>How quickly will someone respond?</summary><p>Set this to your actual response time, such as “within one business day.”</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>FreshCo Home</strong><p>Painting & Remodeling • Free project estimates</p></div>
+      <div><p>Phone: (555) 555-0123<br>Email: hello@example.com</p></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('success').hidden = false;
+      this.querySelector('button').textContent = 'Request Received ✓';
+    });
+  </script>
+</body>
+</html>
